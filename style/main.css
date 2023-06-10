@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+html{
+font-size:62.5%;
+overflow-x:hidden;
+
+}
+
+body{
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("/assests/img/background3.jpg") no-repeat center center/cover;
+width:100vw;
+height: 100vh;
+/* overflow-y: none;
+overflow-x:none; */
+font-family: 'Roboto', sans-serif;
+
+
+}
+
+.container{
+    width: 100%;
+    max-width: 50rem;
+    margin: 6rem auto;
+    background-color: rgb(167 122 157 / 50%);
+    /* border-radius: 3rem; */
+    padding: 4rem 5rem;
+    border-top-left-radius: 3.4rem;
+    position: relative;
+    top: 6.5rem;
+    border-bottom-right-radius: 3.4rem;
+}
+
+.header{
+margin-bottom:1.5rem;
+color:#fefefe;
+font-size:1.9rem;
+
+}
+
+.header h1{
+text-align: center;
+font-size:3.7rem;
+
+
+
+}
+
+form{
+display:flex;
+align-items:center;
+position:relative;
+margin-bottom:2rem;
+
+}
+
+
+form input{
+padding:1rem 1.25rem;
+border:none;
+font-size:1.7rem;
+flex:1;
+border-radius:2.6rem;
+
+
+}
+
+form input:focus{
+outline:none;
+
+}
+
+form button{
+    padding: 1.2rem 1.8rem;
+    border: none;
+    cursor: pointer;
+    color: #fefefe;
+    position: absolute;
+    right: -0.12rem;
+    background-color: #333;
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    font-size: 1.55rem;
+
+}
+
+ul{
+list-style:none;
+
+}
+
+ul li{
+display:flex;
+align-items:center;
+/* justify-content:center; */
+margin:1.5rem 0;
+justify-content:flex-start;
+gap:1rem;
+}
+
+ul li p,ul li input{
+font-size:1.6rem;
+background:transparent;
+border:none;
+font-weight:500;
+color:#fefefe;
+flex:1;
+padding:0.8rem;
+cursor:pointer;
+
+
+}
+
+
+ul li input:focus{
+outline:none;
+
+
+}
+
+
+ul li button{
+border:none;
+border-radius:50%;
+padding:1rem;
+cursor:pointer;
+color:#fefefe;
+
+
+}
+
+ul li .edit{
+background-color:#7ca936;
+
+
+
+}
+
+
+ul li .delete{
+background-color:rgb(154 129 229);
+
+
+
+}
+
+
+footer{
+    text-align: center;
+    position: relative;
+    top: 2rem;
+    margin-top: 3.3rem;
+
+}
+
+footer p{
+
+    font-size: 1.3rem;
+    font-weight: 500;
+    position: absolute;
+    left: 10rem;
+    color: fefefe;
+    color: #fefefe;
+}
+
+
+/* Utility Classes */
+.completed{
+text-decoration:line-through;
+
+
+
+}
+
