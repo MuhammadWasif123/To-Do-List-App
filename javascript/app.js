@@ -111,6 +111,7 @@ p.style.display="block";
 editBtn.style.display="block";
 deleteBtn.style.display="block";
 p.innerText=textInput.value;
+// saveTask();
 
 })
 
@@ -225,6 +226,7 @@ updateBtn.style.color="#fefefe";
 updateBtn.style.fontSize="1.6rem";
 textInput.value=p.textContent;
 textInput.focus();
+// saveTask();
 })
 
 
@@ -235,7 +237,7 @@ p.style.display="block";
 editBtn.style.display="block";
 deleteBtn.style.display="block";
 p.innerText=textInput.value;
-saveTask();
+// saveTask();
 })
 
 
@@ -268,13 +270,9 @@ else{
 
 }
 let mytask=task.children[0].innerHTML;
-console.log(mytask)
 let mytask1=JSON.stringify(mytask);
-console.log(mytask1);
-// console.log(todos)
 
 let myindex=todos.indexOf(mytask1);
-console.log(myindex)
 todos.splice(myindex,1);
 localStorage.setItem("data",JSON.stringify(todos));
 
